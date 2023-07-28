@@ -16,13 +16,14 @@ public class Main {
         return data;
     }
 
-    public static Set<String> getAddition(Set<String> addition){
+    public static Set<String> getAddition(Set<String> addition) {
         Set<String> data = new HashSet<>();
         data.add("grape");
         addition.addAll(data);
         return addition;
     }
-    public static String showList(Set<String> list){
+
+    public static String showList(Set<String> list) {
         StringBuilder result = new StringBuilder();
         int count = 0;
         for (String name : list) {
@@ -30,6 +31,9 @@ public class Main {
             result.append(count).append(") ").append(name).append(" \n");
         }
         return result.toString();
+    }
 
-
+    public static void getOutput(String output) {
+        System.out.println(output);
+    }
 }
