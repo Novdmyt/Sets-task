@@ -1,6 +1,7 @@
 package app.task2;
 
 import java.util.HashSet;
+import java.util.Set;
 
 public class Main {
 
@@ -17,6 +18,15 @@ public class Main {
     public static HashSet<String> getRemove(HashSet<String> data){
         data.remove("kiwi");
         return data;
+    }
+    public static String showList(HashSet<String> list) {
+        StringBuilder result = new StringBuilder();
+        int count = 0;
+        for (String name : list) {
+            count++;
+            result.append(count).append(") ").append(name).append(" \n");
+        }
+        return result.toString();
     }
 
 }
