@@ -28,5 +28,7 @@ public class Main {
         }
         return result.toString();
     }
-
+    public static void getOutput(String output) {
+        System.out.println(output);
+    }
 }
