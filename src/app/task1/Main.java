@@ -22,6 +22,14 @@ public class Main {
         addition.addAll(data);
         return addition;
     }
+    public static String showList(Set<String> list){
+        StringBuilder result = new StringBuilder();
+        int count = 0;
+        for (String name : list) {
+            count++;
+            result.append(count).append(") ").append(name).append(" \n");
+        }
+        return result.toString();
 
 
 }
