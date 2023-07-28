@@ -13,4 +13,10 @@ public class Main {
         data.add("mango");
         return data;
     }
+
+    public static HashSet<String> getRemove(HashSet<String> data){
+        data.remove("kiwi");
+        return data;
+    }
+
 }
