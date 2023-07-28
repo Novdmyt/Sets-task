@@ -5,6 +5,13 @@ import java.util.Set;
 
 public class Main {
 
+    public static void main(String[] args) {
+        System.out.println("Initial data: ");
+        getOutput(showList(getData()));
+        System.out.println("Updated data: ");
+        getOutput(showList(getAddition(getData())));
+    }
+
 
     public static Set<String> getData() {
         Set<String> data = new HashSet<>();
