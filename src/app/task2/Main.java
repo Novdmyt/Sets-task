@@ -4,6 +4,12 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Main {
+    public static void main(String[] args) {
+        System.out.println("Initial data: ");
+        getOutput(showList(getData()));
+        System.out.println("Updated data: ");
+        getOutput(showList(getRemove(getData())));
+    }
 
     public static HashSet<String> getData(){
         HashSet<String> data = new HashSet<>();
