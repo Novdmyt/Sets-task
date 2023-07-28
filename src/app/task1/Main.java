@@ -16,5 +16,12 @@ public class Main {
         return data;
     }
 
+    public static Set<String> getAddition(Set<String> addition){
+        Set<String> data = new HashSet<>();
+        data.add("grape");
+        addition.addAll(data);
+        return addition;
+    }
+
 
 }
